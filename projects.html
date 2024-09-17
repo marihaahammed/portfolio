@@ -137,7 +137,14 @@ a {
  
 a:hover {color:var(--accent);}
  
-img {border:none;}
+img {border:none;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);}
+
+iframe {border:none;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
 
 /* grids */
 
@@ -471,7 +478,7 @@ header nav a:hover::after {
     <!------ page title ------>
     <h1>
         <!-- HERE GOES YOUR PAGE TITLE! -->
-        Cool Stuff
+        Cool Stuff I've done
     </h1>
     <!------ end of page title ------>
     
@@ -503,13 +510,20 @@ header nav a:hover::after {
     <article class="block bg1 row1 col2">
         <div class="basic">
             
-            <h2> Cool Stuff I've Been Doing </h2>
-            <ol>
-            </ol>
+            <h2> AirWear: SkyHack 2023 Winner </h2>
+            <p> November of 2023, I participated in my first ever hackathon - and won! In a team with 3 very talented fashion majors and 1 CS major (me), we collaborated to design smart tech that you can wear. Designed to be accessible and smart clothing for crew members, this was a project meant to make the air travel experience more convenient and accessible for all kinds of abled people.</p>
             
         </div>
     </article>
     
+    
+
+    
+    
+    <!-- an image block... -->
+    <article class="block ftr row1 col1">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/zA9dyeka6yk?si=WCzvHsRrZytuqeQR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </article>
     
 
     <article class="block bg2 row1 col1">
@@ -518,14 +532,6 @@ header nav a:hover::after {
             
         </div>
     </article>
-    
-    
-    <!-- an image block... -->
-    <article class="block ftr row1 col1">
-        <img src=""/>
-    </article>
-    
-
 <!----------------------------------------------------------------------------->
       	
 </main>
