@@ -164,12 +164,14 @@ main {
 .row2 {grid-row:span 2;}
 .col1 {grid-column:span 1;}
 .col2 {grid-column:span 2;}
+.col3 {grid-column: span 3;}
 
 /* grid box colors */
 
 .bg1 {background:var(--box-one);}
 .bg2 {background:var(--box-two);}
-.ftr {background:var(--accent);}
+.bg3 {background:var(--bg-color);}
+.ftr {background:var(--bg-color);}
 
 /*image box styles */
 
@@ -202,6 +204,11 @@ main {
 }
 
 .basic h2 > span {
+    font:normal 12px "B612 Mono",consolas,monospace;
+    color:var(--text);
+}
+
+.basic h3 > span {
     font:normal 12px "B612 Mono",consolas,monospace;
     color:var(--text);
 }
@@ -502,7 +509,7 @@ header nav a:hover::after {
 
 
 
-    <article class="block bg1 row1 col2">
+    <article class="block bg1 row1 col3">
         <div class="basic">
             
             <h2> My Philosophy<span> (very demure, very mindful) </span> </h2>
@@ -511,22 +518,34 @@ header nav a:hover::after {
             
         </div>
     </article>
-    
-    
-
     <article class="block bg2 row1 col1">
-        <div class="info">
-
+        <div class="basic">
+<h3> <span>In all I do, I always incorporate </span>Empathy<span>, remain open-minded, understanding, and calm. </span>
+</h3><h3> <span>I take </span> Responsibility <span>, and I hold myself accountable when needed.</span></h3>
+<h3> </h3>
             
         </div>
     </article>
+     
     
+    <article class="block bg3 row1 col1">
+        <div class="quote">
+            <h2>
+                We rise by lifting others
+            </h2>
+            <p>
+                Robert G. Ingersoll
+            </p>
+        </div>
+    </article>
+ 
     
     <!-- an image block... -->
     <article class="block ftr row1 col1">
-        <img src=""/>
+        <img src="https://cdn.discordapp.com/attachments/1279038727473070225/1286170749907767327/Screenshot_20240918_215042_Instagram3.jpg?ex=66ecef5a&is=66eb9dda&hm=d828d43b5336006fdb369a75e636914a2e16c78d53dcf03e8efa01a394165d5c&"/>
     </article>
-    
+
+
 
 <!----------------------------------------------------------------------------->
       	
